@@ -1,3 +1,4 @@
-<hello name="{{ name }}"></hello>
+<hello name="{{ name | capitalfirst }}"></hello>
 <p>Start editing to see some magic happen :)</p>
-<h1>{{ 'hello' | capitalfirst }}</h1>
+<h1>{{ name | capitalfirst }}</h1>
+<input type="text" [(ngModel)]="name" />
